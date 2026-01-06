@@ -1,0 +1,71 @@
+# =========================
+# Python / venv
+# =========================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+
+# =========================
+# Notebooks / testes / qualidade
+# =========================
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================
+# VS Code / OS
+# =========================
+.vscode/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs / temporários
+# =========================
+*.log
+tmp/
+.cache/
+
+# =========================
+# Dados e outputs gerados (projeto DS/GIS)
+# =========================
+data/raw/
+data/processed/
+results/
+outputs/
+logs/
+
+# =========================
+# GIS (arquivos pesados/gerados)
+# =========================
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.qpj
+*.gpkg
+*.tif
+*.tiff
+*.vrt
+*.aux.xml
+*.qgd
+
+# =========================
+# Secrets / env vars locais
+# =========================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
