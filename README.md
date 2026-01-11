@@ -1,6 +1,3 @@
-Segue um README pronto (bloco 1). Só copiar e colar.
-
----
 
 # Projeto GIS Data Science: Amazônia (Bloco 1) - Concluído 11/01/2026
 
