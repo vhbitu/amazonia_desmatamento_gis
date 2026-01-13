@@ -1,3 +1,7 @@
+DROP VIEW IF EXISTS public.vw_desmatamento_ate_5km_rodovias_amazonia_2022;
+DROP TABLE IF EXISTS public.rodovias_amazonia_buffer_5km_5880;
+DROP TABLE IF EXISTS public.rodovias_amazonia_union_5880;
+
 ANALYZE public.prodes_2022_amazonia;
 ANALYZE public.rodovias_amazonia;
 
