@@ -8,8 +8,8 @@ from sqlalchemy import create_engine
 DATASETS = {
     "cnuc": ("data/processed/cnuc.gpkg", "cnuc"),
     "rodovias": ("data/processed/rodovias.gpkg", "rodovias"),
-    "rg2017": ("data/processed/rg2017.gpkg", "rg2017"),
     "prodes_2022": ("data/processed/prodes_2022.gpkg", "prodes_2022"),
+    "br_uf_2024": ("data/processed/br_uf_2024.gpkg", "br_uf_2024"),
 }
 
 

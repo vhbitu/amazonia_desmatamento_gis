@@ -30,7 +30,7 @@ out_dir.mkdir(parents=True, exist_ok=True)
 datasets = {
     "cnuc": "data/raw/ucs_cnuc/cnuc_2025_08.shp",
     "rodovias": "data/raw/rodovias_ibge/2014/rodovia_2014.shp",
-    "rg2017": "data/raw/estados/RG2017_regioesgeograficas2017.shp",
+    "br_uf_2024": "data/raw/estados/BR_UF_2024.shp",
 }
 
 # 1) pequenos: salva tudo
@@ -47,7 +47,7 @@ prodes_fp = "data/raw/desmatamento_prodes/yearly_deforestation_biome.shp"
 prodes = gpd.read_file(prodes_fp, where=f"year = {PRODES_YEAR}").to_crs(TARGET_CRS)
 
 # mantém só o essencial
-keep = ["state", "main_class", "class_name", "year", "area_km", "uuid", "geometry"]
+keep = ["state", "source", "main_class", "class_name", "year", "area_km", "uuid", "geometry"]
 prodes = prodes[[c for c in keep if c in prodes.columns]]
 
 out = out_dir / f"prodes_{PRODES_YEAR}.gpkg"

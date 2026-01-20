@@ -5,7 +5,7 @@ DATASETS = [
     ("prodes", Path("data/raw/desmatamento_prodes/yearly_deforestation_biome.shp")),
     ("cnuc", Path("data/raw/ucs_cnuc/cnuc_2025_08.shp")),
     ("rodovias", Path("data/raw/rodovias_ibge/2014/rodovia_2014.shp")),
-    ("rg2017", Path("data/raw/estados/RG2017_regioesgeograficas2017.shp")),
+    ("br_uf_2024", Path("data/raw/estados/BR_UF_2024.shp")),
 ]
 
 def encoding_from_cpg(shp: Path) -> str | None:
